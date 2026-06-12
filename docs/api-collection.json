@@ -1,0 +1,211 @@
+{
+  "info": {
+    "_postman_id": "06482703-4279-449a-9138-088a15da3c2f",
+    "name": "Laravel API Draft",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52397112",
+    "_collection_link": "https://go.postman.co/collection/52397112-06482703-4279-449a-9138-088a15da3c2f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}status",
+          "host": [
+            "{{base_url}}status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Welcome",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}welcome",
+          "host": [
+            "{{base_url}}welcome"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Time",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}time",
+          "host": [
+            "{{base_url}}time"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Date",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}date",
+          "host": [
+            "{{base_url}}date"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Greet",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}greet/:name",
+          "host": [
+            "{{base_url}}greet"
+          ],
+          "path": [
+            ":name"
+          ],
+          "variable": [
+            {
+              "key": "name",
+              "value": "Joao"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Sum",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"value1\": 1000,\r\n    \"value2\": 2000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}sum",
+          "host": [
+            "{{base_url}}sum"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Store new contact",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"ana\",\r\n    \"email\": \"ana@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}store-contact",
+          "host": [
+            "{{base_url}}store-contact"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get contacts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}get-contacts",
+          "host": [
+            "{{base_url}}get-contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Clear contacts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}clear-contacts",
+          "host": [
+            "{{base_url}}clear-contacts"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "name",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
