@@ -129,7 +129,7 @@ http://SEU_IP/api/users
 
 ---
 
-## 📥 Re'cebendo Dados da Requisição
+## 📥 Recebendo Dados da Requisição
 
 O Laravel disponibiliza o objeto `Request''''` para acessar os dados enviados pelo cliente.'
 
